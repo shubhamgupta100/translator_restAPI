@@ -8,9 +8,7 @@ module.exports.home = async function (request, response) {
         if (err) {
           response.json(err);
         }
-        console.log(translate);
         if (translate == "") {
-          console.log(res);
           Translator.create({
             from,
             to,
